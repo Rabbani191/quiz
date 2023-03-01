@@ -4,6 +4,9 @@ import {Application, Request, Response} from "express";
 import { QuizController } from "./controller/quiz.controller";;
 import {ValidationMiddleware} from "./middleware/validation.middleware";
 import {CreateQuizSchema} from "./dto/quiz.dto";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 AppDataSource
     .initialize()
